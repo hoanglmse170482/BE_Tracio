@@ -1,25 +1,23 @@
-package com.tracio.Tracio.model;
+package com.tracio.Tracio.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
 
 @Entity
-@Table(name = "blog_comments")
+@Table(name = "group_ride_joiner")
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class BlogComment {
+public class GroupRideJoiner {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long blogCommentId;
-
-    private String text;
+    private Long groupRideJoinerId;
 
     @ManyToOne
-    @JoinColumn(name = "blog_id", nullable = false)
-    private Blog blog;
+    @JoinColumn(name = "groupRide_id", nullable = false)
+    private GroupRide groupRide;
 
     @ManyToOne
     @JoinColumn(name = "user_id", nullable = false)

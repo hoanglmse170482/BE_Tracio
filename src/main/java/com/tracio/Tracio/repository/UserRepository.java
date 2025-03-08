@@ -1,6 +1,6 @@
 package com.tracio.Tracio.repository;
 
-import com.tracio.Tracio.model.User;
+import com.tracio.Tracio.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

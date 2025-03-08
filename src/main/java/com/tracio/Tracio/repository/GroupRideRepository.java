@@ -1,6 +1,6 @@
 package com.tracio.Tracio.repository;
 
-import com.tracio.Tracio.model.GroupRide;
+import com.tracio.Tracio.entity.GroupRide;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

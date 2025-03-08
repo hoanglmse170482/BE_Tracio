@@ -1,4 +1,4 @@
-package com.tracio.Tracio.model;
+package com.tracio.Tracio.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -12,7 +12,6 @@ import java.time.LocalDate;
 @AllArgsConstructor
 @Builder
 public class Warranty {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

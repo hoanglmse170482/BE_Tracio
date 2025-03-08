@@ -1,6 +1,6 @@
 package com.tracio.Tracio.repository;
 
-import com.tracio.Tracio.model.Product;
+import com.tracio.Tracio.entity.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

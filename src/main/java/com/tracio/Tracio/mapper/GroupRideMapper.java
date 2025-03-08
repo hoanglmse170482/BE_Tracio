@@ -1,7 +1,7 @@
 package com.tracio.Tracio.mapper;
 
 import com.tracio.Tracio.dto.response.GroupRideResponse;
-import com.tracio.Tracio.model.GroupRide;
+import com.tracio.Tracio.entity.GroupRide;
 
 public class GroupRideMapper {
     private GroupRideMapper() {}

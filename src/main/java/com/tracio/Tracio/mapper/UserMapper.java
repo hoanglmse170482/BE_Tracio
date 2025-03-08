@@ -1,7 +1,7 @@
 package com.tracio.Tracio.mapper;
 
 import com.tracio.Tracio.dto.request.UserDTO;
-import com.tracio.Tracio.model.User;
+import com.tracio.Tracio.entity.User;
 
 public class UserMapper {
 

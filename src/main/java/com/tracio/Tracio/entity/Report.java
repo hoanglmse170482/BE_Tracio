@@ -1,24 +1,29 @@
-package com.tracio.Tracio.model;
+package com.tracio.Tracio.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.time.LocalDateTime;
+
 @Entity
-@Table(name = "service")
+@Table(name = "report")
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class Service {
+public class Report {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long serviceId;
+    private Long reportId;
 
-    private Long shopId;
-    private String serviceType;
+    private String reportType;
+    private String description;
+    private String status;
+    private LocalDateTime createdAt;
 
     @ManyToOne
     @JoinColumn(name = "user_id", nullable = false)
     private User user;
 }
+

@@ -1,26 +1,25 @@
-package com.tracio.Tracio.model;
+package com.tracio.Tracio.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.time.LocalDateTime;
+
 @Entity
-@Table(name = "shop_reviews")
+@Table(name = "notifications")
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class ShopReview {
+public class Notification {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long reviewId;
+    private Long notificationId;
 
-    private Integer rating;
-    private String reviewText;
-
-    @ManyToOne
-    @JoinColumn(name = "shop_id", nullable = false)
-    private Shop shop;
+    private String message;
+    private LocalDateTime createdAt;
 
     @ManyToOne
     @JoinColumn(name = "user_id", nullable = false)

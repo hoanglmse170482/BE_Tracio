@@ -1,4 +1,4 @@
-package com.tracio.Tracio.model;
+package com.tracio.Tracio.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -6,22 +6,22 @@ import lombok.*;
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "notifications")
+@Table(name = "blogs")
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class Notification {
-
+public class Blog {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long notificationId;
+    private Long blogId;
 
-    private String message;
+    private String text;
+    private String image;
     private LocalDateTime createdAt;
 
     @ManyToOne
-    @JoinColumn(name = "user_id", nullable = false)
-    private User user;
+    @JoinColumn(name = "created_by_user_id", nullable = false)
+    private User createdBy;
 }

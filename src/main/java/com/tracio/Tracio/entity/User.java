@@ -1,4 +1,4 @@
-package com.tracio.Tracio.model;
+package com.tracio.Tracio.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -18,6 +18,7 @@ import java.util.List;
 public class User implements UserDetails {
 
     @Id
+    // avbc
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
     @Column(name = "user_id")

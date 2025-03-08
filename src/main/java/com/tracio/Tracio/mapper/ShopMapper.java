@@ -2,7 +2,7 @@ package com.tracio.Tracio.mapper;
 
 import com.tracio.Tracio.dto.request.ShopCreationRequest;
 import com.tracio.Tracio.dto.response.ShopCreationResponse;
-import com.tracio.Tracio.model.Shop;
+import com.tracio.Tracio.entity.Shop;
 
 public class ShopMapper {
 

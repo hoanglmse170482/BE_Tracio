@@ -1,6 +1,6 @@
 package com.tracio.Tracio.repository;
 
-import com.tracio.Tracio.model.OrderDetail;
+import com.tracio.Tracio.entity.OrderDetail;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

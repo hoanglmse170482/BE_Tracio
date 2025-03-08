@@ -3,7 +3,7 @@ package com.tracio.Tracio.service;
 import com.tracio.Tracio.repository.UserRepository;
 import com.tracio.Tracio.dto.request.UserDTO;
 import com.tracio.Tracio.mapper.UserMapper;
-import com.tracio.Tracio.model.User;
+import com.tracio.Tracio.entity.User;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.crypto.password.PasswordEncoder;
