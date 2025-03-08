@@ -1,0 +1,22 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/demo
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+  application:
+    name: Tracio
+
+jwt:
+  secret-key: 93HPb2TnzAWiEieQPLnpUUoIdfmVqdsaumsSsdaoVtBrib4PLNuK7cPIDeu22hCQMg1YkbhCEl3yhfpzaT5YILxXzareAzJ3VioJ7mZ5AMcPOfGTbTA0L9ylWsQnJHJomtroc8P42u6Tirj7XZkYORo3MALYKs7M00oJ39toJoS3Kcw8sL60t7fikZW2rYmANEnjqyAJiB36wpvLuOTRa13yMW73UnRqFCxffz3seVlLpROhduYG1O20r5yPCQAY
+  expired-time-access-token: 2
+  expired-time-refresh-token: 14
